@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+
+<h2>HTML Forms</h2>
+
+<h4>Click the button below for help. </h4>
+
+<button type="button" onclick="alert('You have to fill up this form accordingly for Job. Good luck!')">Click Me!</button><br><br>
+<fieldset>
+    <legend><h4><b>Form of personal information</b></h4></legend>
+<form autocomplete="off">
+  <label for="fname">Name:</label><br>
+  <input type="text" id="fname" name="fname" value="John Doe"><br>
+</form>
+<form action="/action_page.php">
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+</form>
+<form autocomplete="off">
+  <label for="fname">Email:</label><br>
+  <input type="email" id="kname" name="kname" value="JohnDoe@gmail.com"><br>
+  <label for="mname">Password:</label><br>
+  <input type="password" id="mname" name="mname" value="********"><br>
+  <label for="nname">Contact no:</label><br>
+  <input type="number" id="nname" name="nname" value="********"><br><br>
+</form>
+
+<b>Address:</b><br>
+<select name="Address" id="">
+    <option value="Dhaka">Dhaka</option>
+    <option value="Chittagong">Chittagong</option>
+    <option value="Barisal">Barisal</option>
+    <option value="Rajshahi">Rajshahi</option>
+    <option value="Rangpur">Rangpur</option>
+    <option value="Sylhet">Sylhet</option>
+    <option value="Mymensingh">Mymensingh</option>
+</select><br>
+
+<b>Areas you can work in:</b><br>
+<select name="Address" id="" size="4" multiple>
+    <option value="Dhaka">Dhaka</option>
+    <option value="Chittagong">Chittagong</option>
+    <option value="Barisal">Barisal</option>
+    <option value="Rajshahi">Rajshahi</option>
+    <option value="Rangpur">Rangpur</option>
+    <option value="Sylhet">Sylhet</option>
+    <option value="Mymensingh">Mymensingh</option>
+</select><br>
+
+<p>Choose your favorite programming language:</p>
+
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">C</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">Java</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">Python</label>
+</form> 
+
+<p>Which languages do you know?</p>
+
+<form action="">
+  <input type="checkbox" id="lang1" name="lang1" value="C">
+  <label for="lang1">C</label><br>
+  <input type="checkbox" id="lang2" name="lang2" value="Python">
+  <label for="lang2">Python</label><br>
+  <input type="checkbox" id="lang3" name="lang3" value="Java">
+  <label for="lang3">Java</label><br>
+  <input type="checkbox" id="lang4" name="lang4" value="html">
+  <label for="lang4">html</label><br>
+  <input type="checkbox" id="lang5" name="lang5" value="CSS">
+  <label for="lang5">CSS</label><br>
+  <input type="checkbox" id="lang6" name="lang6" value="JavaScript">
+  <label for="lang6">JavaScript</label><br><br>
+</form> 
+
+<p>Which compiler do you use?</p>
+
+<form action="">
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Visual Studio Code">
+    <option value="Microsoft Visual Studio">
+    <option value="Sublime text">
+    <option value="Git">
+    <option value="PyCharm">
+  </datalist>
+</form>
+
+<p>From what time do you usually start working?</p>
+
+<form action="">
+  <label for="appt">Select a time:</label>
+  <input type="time" id="appt" name="appt"><br><br>
+</form>
+
+<form action="">
+  <label for="favcolor">Select your favorite color for websites:</label>
+  <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+</form>
+
+<p>On our programming test, when and how much time did it take for you to finish it?</p>
+
+<form action="">
+  <label for="birthdaytime">Date and Time:</label>
+  <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br><br>
+</form>
+
+<p>How would you rate you service?</p>
+
+<form action="" method="get">
+  <label for="vol">Rating (between 😥 and 😊):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50"><br><br>
+</form>
+
+<p>Your social media connections:</p>
+
+<form action="">
+  <label for="homepage">Facebook:</label>
+  <input type="url" id="homepage" name="homepage"><br>
+  <label for="homepage">Instagram:</label>
+  <input type="url" id="homepage" name="homepage"><br>
+  <label for="homepage">Github:</label>
+  <input type="url" id="homepage" name="homepage"><br><br>
+</form>
+
+<p>Write a few sentences about yourself:</p>
+
+<form action="">
+  <textarea name="message" rows="10" cols="30">Write here...</textarea>
+  <br><br>
+  <input type="reset"><br><br>
+</form>
+
+<b>Upload your application:</b><br>
+<input type="file"><br>
+
+</fieldset>
+
+<p>Click the "Submit" button to submit your form.</p>
+<input type="submit" value="Submit">
+
+</body>
+</html>
+
+
